@@ -36,7 +36,9 @@ class BiSquare:
         b = self.coef_B
         c = self.coef_C
         D = b*b - 4*a*c
-        if D == 0.0:
+        if a == 0.0:
+            pre_roots.append(-c/b)
+        elif D == 0.0:
             pre_roots.append(-b / (2.0 * a))
         elif D > 0.0:
             sqD = math.sqrt(D)

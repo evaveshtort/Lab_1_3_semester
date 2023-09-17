@@ -22,7 +22,9 @@ def get_roots(a, b, c):
     pre_result = []
     result = []
     D = b*b - 4*a*c
-    if D == 0.0:
+    if a == 0.0:
+        pre_result.append(-c/b)
+    elif D == 0.0:
         pre_root = -b / (2.0*a)
         pre_result.append(pre_root)
     elif D > 0.0:
