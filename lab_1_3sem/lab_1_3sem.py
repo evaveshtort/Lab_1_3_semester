@@ -2,20 +2,20 @@
 import math
 
 def get_coef(index, prompt):
-    
-    try:
-        coef_str = sys.argv[index]
-    except:
-        print(prompt)
-        while True:
-            coef_str = input()
-            try:
-                coef = float(coef_str)
-                break
-            except:
-                print('Ошибка: это не число. Повторите ввод коэффициента.')
+     try:
+         coef_str = sys.argv[index]
+     except:
+         print(prompt)
+         coef_str = input()
+     while True:
+         try:
+             coef = float(coef_str)
+             break
+         except:
+             print('Ошибка: введено не число. Повторите ввод коэффициента.')
+             coef_str = input()
  
-    return coef
+     return coef
 
 
 def get_roots(a, b, c):
