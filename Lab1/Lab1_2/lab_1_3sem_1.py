@@ -65,9 +65,9 @@ class BiSquare:
             elif self.num_roots == 2:
                 print('Два корня: {} и {}'.format(self.roots_list[0], self.roots_list[1]))
             elif self.num_roots == 3:
-                print('Три корня: {}, {} и {}'.format(roots[0], roots[1], roots[2]))
+                print('Три корня: {}, {} и {}'.format(self.roots_list[0], self.roots_list[1], self.roots_list[2]))
             elif self.num_roots == 4:
-                print('Четыре корня: {}, {}, {}, и {}'.format(roots[0], roots[1], roots[2], roots[3]))
+                print('Четыре корня: {}, {}, {}, и {}'.format(self.roots_list[0], self.roots_list[1], self.roots_list[2], self.roots_list[3]))
         
 def main():
     r = BiSquare()

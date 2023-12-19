@@ -39,6 +39,7 @@ def get_roots(a, b, c):
             result.append(-math.sqrt(pre_root))
         elif pre_root == 0:
             result.append(pre_root)
+           
     return result
 
 
